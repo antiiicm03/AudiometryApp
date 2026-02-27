@@ -2,12 +2,12 @@ import { useEffect, useRef } from 'react';
 import { WebView } from 'react-native-webview';
 
 const AudioToneGenerator = ({
-  frequency,      // Hz (125, 250, 500, 1000, 2000, 4000, 8000)
-  volumeDb,       // dB HL (0-100)
-  ear,            // 'left' | 'right' | 'both'
+  frequency,      
+  volumeDb,       
+  ear,            
   isPlaying,
-  onReady,        // Callback kada je audio spreman
-  onError,        // Callback za greške
+  onReady,        
+  onError,        
 }) => {
   const webViewRef = useRef(null);
 
@@ -17,7 +17,7 @@ const AudioToneGenerator = ({
     const message = {
       type: isPlaying ? 'play' : 'stop',
       frequency,
-      volume: Math.pow(10, volumeDb / 20), // dB → linear gain
+      volume: Math.pow(10, volumeDb / 20), 
       ear,
     };
     

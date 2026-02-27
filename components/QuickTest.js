@@ -58,9 +58,9 @@ export default function QuickTest({ onStartTest }) {
   );
 }
 
-// ... isti styles kao što imaš
+
 const styles = StyleSheet.create({
-  // ... tvoji postojeći styles
+ 
   container: {
     paddingTop: 10,
     paddingBottom: 20,
