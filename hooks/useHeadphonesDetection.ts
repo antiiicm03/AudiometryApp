@@ -1,4 +1,3 @@
-// hooks/useHeadphonesDetection.ts
 import { useCallback, useEffect, useState } from 'react';
 import HeadphonesDetection, { subscribeToHeadphonesChanges } from '../components/HeadphonesDetection';
 
